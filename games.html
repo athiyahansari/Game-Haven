@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Haven</title>
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/favicon/ms-icon-70x70.png" alt="Game Haven Logo">
+        </div>
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-overlay-open">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </label>
+            <div class="nav-overlay">
+                <label for="nav-toggle" class="nav-overlay-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </label>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/index.html" class="nav-link">Home</a></li>
+                <li><a href="/about.html" class="nav-link">About Us</a></li>
+                <li><a href="/upcoming.html" class="nav-link">Upcoming Games</a></li>
+                <!-- Mobile View - Direct Links -->
+                <li class="mobile-only"><a href="/consoles.html" class="nav-link">Consoles</a></li>
+                <li class="mobile-only"><a href="/peripherals.html" class="nav-link">Gaming Peripherals</a></li>
+                <!-- Desktop View - Products Dropdown -->
+                <li class="products-container desktop-only">
+                    <a href="#" class="nav-link">Products</a>
+                    <ul class="products-dropdown">
+                        <li><a href="/consoles.html" class="nav-link">Consoles</a></li>
+                        <li><a href="/peripherals.html" class="nav-link">Gaming Peripherals</a></li>
+                    </ul>
+                </li>
+                <li><a href="/games.html" class="nav-link  active">Games</a></li>
+                <li><a href="/faq.html" class="nav-link">Queries & FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+       
+
+    <main class="games-container">
+      <h1>Our Games Collection</h1>
+      <p class="main-description">Discover an incredible selection of games across various genres. From action-packed adventures to strategic masterpieces, find your next gaming obsession here.</p>
+
+      <div class="genre-nav">
+          <a href="#action" class="genre-link">Action</a>
+          <a href="#rpg" class="genre-link">RPG</a>
+          <a href="#strategy" class="genre-link">Strategy</a>
+          <a href="#sports" class="genre-link">Sports</a>
+          <a href="#horror" class="genre-link">Horror</a>
+      </div>
+
+      <section id="action" class="genre-section">
+          <h2>Action Games</h2>
+          <div class="games-grid">
+              <article class="game-card">
+                  <div class="game-image-container">
+                      <img src="/images/games/dynasty warriors.jpg" alt="Game 1">
+                      <div class="game-description">
+                          <p>Become immersed in exhilarating battles as a nameless hero in the Three Kingdoms</p>
+                      </div>
+                  </div>
+                  <div class="game-info">
+                      <h3>Dynasty Warriors: Origin</h3>
+                      <p class="price">$58.29</p>
+                  </div>
+              </article>
+              <article class="game-card">
+                  <div class="game-image-container">
+                      <img src="/images/games/elder scrolls V.jpg" alt="Game 2">
+                      <div class="game-description">
+                          <p>The Elder Scrolls V: Skyrim Special Edition brings the epic fantasy to life in stunning detail. The Special Edition includes the critically acclaimed game and add-ons with all-new features.</p>
+                      </div>
+                  </div>
+                  <div class="game-info">
+                      <h3>The Elder Scrolls V: Skyrim Special Edition</h3>
+                      <p class="price">$24.99</p>
+                  </div>
+              </article>
+              <article class="game-card">
+                  <div class="game-image-container">
+                      <img src="/images/games/final fantasy VII rebirth.jpg" alt="Game 3">
+                      <div class="game-description">
+                          <p>The Unknown Journey Continues... After escaping from the dystopian city of Midgar, Cloud and his friends set out on a journey across the planet. New adventures await in a vibrant and vast world in this standalone entry to the FFVII remake trilogy!</p>
+                      </div>
+                  </div>
+                  <div class="game-info">
+                      <h3>Final Fantasy VII Rebirth</h3>
+                      <p class="price">$59.99</p>
+                  </div>
+              </article>
+              <article class="game-card">
+                  <div class="game-image-container">
+                      <img src="/images/games/ready or not.jpg" alt="Game 4">
+                      <div class="game-description">
+                          <p>Ready or Not is an intense, tactical, first-person shooter that depicts a modern-day world in which SWAT police units are called to defuse hostile and confronting situations.</p>
+                      </div>
+                  </div>
+                  <div class="game-info">
+                      <h3>Ready or Not</h3>
+                      <p class="price">$29.99</p>
+                  </div>
+              </article>
+          </div>
+      </section>
+
+      <section id="rpg" class="genre-section">
+          <h2>RPG Games</h2>
+          <div class="games-grid">
+              <article class="game-card">
+                  <div class="game-image-container">
+                      <img src="/images/games/path of exile 2.jpg" alt="RPG Game 1">
+                      <div class="game-description">
+                          <p>Path of Exile 2 is a next generation Action RPG from Grinding Gear Games, featuring co-op for up to six players. Set years after the original Path of Exile, you will return to the dark world of Wraeclast and seek to end the corruption that is spreading.</p>
+                      </div>
+                  </div>
+                  <div class="game-info">
+                      <h3>Path of Exile 2</h3>
+                      <p class="price">$10.49</p>
+                  </div>
+              </article>
+              <article class="game-card">
+                <div class="game-image-container">
+                    <img src="/images/games/monster hunter wilds.jpg" alt="Game 1">
+                    <div class="game-description">
+                        <p>The unbridled force of nature runs wild and relentless, with environments transforming drastically from one moment to the next. This is a story of monsters and humans and their struggles to live in harmony in a world of duality.</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Monster Hunter Wilds</h3>
+                    <p class="price">$69.99</p>
+                </div>
+              </article>
+              <article class="game-card">
+                <div class="game-image-container">
+                    <img src="/images/games/black myth wukong.jpg" alt="Game 1">
+                    <div class="game-description">
+                        <p>Black Myth: Wukong is an action RPG rooted in Chinese mythology. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past.</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Black Myth: Wukong</h3>
+                    <p class="price">$59.99</p>
+                </div>
+              </article>
+              <article class="game-card">
+                <div class="game-image-container">
+                  <img src="/images/games/elden ring.jpg" alt="Game 1">
+                  <div class="game-description">
+                    <p>THE CRITICALLY ACCLAIMED FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.</p>
+                  </div>
+                </div>
+                <div class="game-info">
+                  <h3>Elden Ring</h3>
+                  <p class="price">$59.99</p>
+                </div>
+              </article>
+          </div>
+      </section>
+      <section id="strategy" class="genre-section">
+        <h2>Strategy Games</h2>
+        <div class="games-grid">
+            <article class="game-card">
+                <div class="game-image-container">
+                    <img src="/images/games/age of darkness.jpg" alt="RPG Game 1">
+                    <div class="game-description">
+                        <p>Age of Darkness: Final Stand is a dark fantasy survival RTS where you must illuminate, build and defend humanity’s last bastion against hordes of Nightmares. Set in the remnants of a kingdom consumed by a deadly fog, you decide. Will you hide in the light? Or take back your world.</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Age of Darkness: Final Stand</h3>
+                    <p class="price">$11.99</p>
+                </div>
+            </article>
+            <article class="game-card">
+              <div class="game-image-container">
+                  <img src="/images/games/crusader kings III.jpg" alt="Game 1">
+                  <div class="game-description">
+                      <p>Love, fight, scheme, and claim greatness. Determine your noble house’s legacy in the sprawling grand strategy of Crusader Kings III. Death is only the beginning as you guide your dynasty’s bloodline in the rich and larger-than-life simulation of the Middle Ages.</p>
+                  </div>
+              </div>
+              <div class="game-info">
+                  <h3>Crusader Kings III</h3>
+                  <p class="price">$32.99</p>
+              </div>
+            </article>
+            <article class="game-card">
+              <div class="game-image-container">
+                  <img src="/images/games/totalwar warhammer III.jpg" alt="Game 1">
+                  <div class="game-description">
+                      <p>The cataclysmic conclusion to the Total War: WARHAMMER trilogy is here. Rally your forces and step into the Realm of Chaos, a dimension of mind-bending horror where the very fate of the world will be decided. Will you conquer your Daemons… or command them?</p>
+                  </div>
+              </div>
+              <div class="game-info">
+                  <h3>Total War: WARHAMMER III</h3>
+                  <p class="price">$59.99</p>
+              </div>
+            </article>
+            <article class="game-card">
+              <div class="game-image-container">
+                <img src="/images/games/cta gates of hell.jpg" alt="Game 1">
+                <div class="game-description">
+                  <p>Call to Arms - Gates of Hell is a realistic RTS/ RTT game that offers endless replay value. Command all types of troops in historical singleplayer, dynamic campaign, PvP and PvE battles. Are you ready for some serious immersion in World War 2?</p>
+                </div>
+              </div>
+              <div class="game-info">
+                <h3>Call to Arms - Gates of Hell: Ostfront</h3>
+                <p class="price">$11.99</p>
+              </div>
+            </article>
+        </div>
+      </section>
+      <section id="sports" class="genre-section">
+        <h2>Sports Games</h2>
+        <div class="games-grid">
+            <article class="game-card">
+                <div class="game-image-container">
+                    <img src="/images/games/ea sports 25.jpg" alt="RPG Game 1">
+                    <div class="game-description">
+                        <p>EA SPORTS FC™ 25 gives you more ways to win for the club. Team up with friends in your favourite modes with the new 5v5 Rush, and manage your club to victory as FC IQ delivers more tactical control than ever before.</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>EA Sports™ FC 25</h3>
+                    <p class="price">$69.99</p>
+                </div>
+            </article>
+            <article class="game-card">
+              <div class="game-image-container">
+                  <img src="/images/games/wwe 2k24.jpg" alt="Game 1">
+                  <div class="game-description">
+                      <p>Experience a gripping retelling of WrestleMania’s greatest moments in 2K Showcase of the Immortals in WWE 2K24, where you can relive a collection of some of the most unforgettable, career-defining matches.</p>
+                  </div>
+              </div>
+              <div class="game-info">
+                  <h3>WWE 2k24</h3>
+                  <p class="price">$90.99</p>
+              </div>
+            </article>
+            <article class="game-card">
+              <div class="game-image-container">
+                  <img src="/images/games/ea sports madden nfl 25.jpg" alt="Game 1">
+                  <div class="game-description">
+                      <p>Hit like you mean it with FieldSENSE™ powered by BOOM Tech. Experience how the new physics-informed dynamic tackling system unlocks realistic collisions & new gameplay animations on both sides of the ball.</p>
+                  </div>
+              </div>
+              <div class="game-info">
+                  <h3>EA SPORTS™ Madden NFL 25</h3>
+                  <p class="price">$69.99</p>
+              </div>
+            </article>
+            <article class="game-card">
+              <div class="game-image-container">
+                <img src="/images/games/riders republic.jpg" alt="Game 1">
+                <div class="game-description">
+                  <p>Jump into a massive multiplayer playground! Bike, ski, snowboard, or wingsuit across an open world sports paradise.   </p>
+                </div>
+              </div>
+              <div class="game-info">
+                <h3>Riders Republic</h3>
+                <p class="price">$29.99</p>
+              </div>
+            </article>
+        </div>
+      </section>
+      <section id="horror" class="genre-section">
+        <h2>Horror Games</h2>
+        <div class="games-grid">
+            <article class="game-card">
+                <div class="game-image-container">
+                    <img src="/images/games/the forest.jpg" alt="RPG Game 1">
+                    <div class="game-description">
+                        <p>As the lone survivor of a passenger jet crash, you find yourself in a mysterious forest battling to stay alive against a society of cannibalistic mutants. Build, explore, survive in this terrifying first person survival horror simulator.</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>The Forest</h3>
+                    <p class="price">$8.19</p>
+                </div>
+            </article>
+            <article class="game-card">
+              <div class="game-image-container">
+                  <img src="/images/games/left4dead2.jpg" alt="Game 1">
+                  <div class="game-description">
+                      <p>Set in the zombie apocalypse, Left 4 Dead 2 (L4D2) is the highly anticipated sequel to the award-winning Left 4 Dead, the #1 co-op game of 2008. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns.     </p>
+                  </div>
+              </div>
+              <div class="game-info">
+                  <h3>Left 4 Dead 2</h3>
+                  <p class="price">$5.49</p>
+              </div>
+            </article>
+            <article class="game-card">
+              <div class="game-image-container">
+                  <img src="/images/games/project zomboid.jpg" alt="Game 1">
+                  <div class="game-description">
+                      <p>Project Zomboid is the ultimate in zombie survival. Alone or in MP: you loot, build, craft, fight, farm and fish in a struggle to survive. A hardcore RPG skillset, a vast map, massively customisable sandbox and a cute tutorial raccoon await the unwary. So how will you die? All it takes is a bite..</p>
+                  </div>
+              </div>
+              <div class="game-info">
+                  <h3>Project Zomboid</h3>
+                  <p class="price">$8.19</p>
+              </div>
+            </article>
+            <article class="game-card">
+              <div class="game-image-container">
+                <img src="images/games/dead by daylight.jpg" alt="Game 1">
+                <div class="game-description">
+                  <p>Trapped forever in a realm of eldritch evil where even death is not an escape, four determined Survivors face a bloodthirsty Killer in a vicious game of nerve and wits. Pick a side and step into a world of tension and terror with horror gaming's best asymmetrical multiplayer.  </p>
+                </div>
+              </div>
+              <div class="game-info">
+                <h3>Dead by Daylight</h3>
+                <p class="price">$9.99</p>
+              </div>
+            </article>
+        </div>
+      </section>
+  </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="upcoming.html">Upcoming Games</a>
+            <a href="consoles.html">Consoles</a>
+            <a href="peripherals.html">Gaming Peripherals</a>
+            <a href="games.html">Games</a>
+            <a href="faq.html">FAQ & Queries</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#" class="last-link">Terms & Conditions</a>
+          </div>
+          
+          <div class="footer-logo">
+            <img src="/favicon/apple-icon-76x76.png" alt="Game Haven Logo">
+            <div class="social-links">
+              <a href="https://wa.me/">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    
+                    <path d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"/>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    
+                    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    
+                    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/>
+                </svg>
+              </a>
+              <a href="https://tiktok.com/">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
+                    <path d="M 6 3 C 4.3550302 3 3 4.3550302 3 6 L 3 18 C 3 19.64497 4.3550302 21 6 21 L 18 21 C 19.64497 21 21 19.64497 21 18 L 21 6 C 21 4.3550302 19.64497 3 18 3 L 6 3 z M 12 7 L 14 7 C 14 8.005 15.471 9 16 9 L 16 11 C 15.395 11 14.668 10.734156 14 10.285156 L 14 14 C 14 15.654 12.654 17 11 17 C 9.346 17 8 15.654 8 14 C 8 12.346 9.346 11 11 11 L 11 13 C 10.448 13 10 13.449 10 14 C 10 14.551 10.448 15 11 15 C 11.552 15 12 14.551 12 14 L 12 7 z"/>
+                </svg>
+              </a>
+              <a href="https://discord.com/">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    
+                    <path d="M19.952,5.672c-1.904-1.531-4.916-1.79-5.044-1.801c-0.201-0.017-0.392,0.097-0.474,0.281 c-0.006,0.012-0.072,0.163-0.145,0.398c1.259,0.212,2.806,0.64,4.206,1.509c0.224,0.139,0.293,0.434,0.154,0.659 c-0.09,0.146-0.247,0.226-0.407,0.226c-0.086,0-0.173-0.023-0.252-0.072C15.584,5.38,12.578,5.305,12,5.305S8.415,5.38,6.011,6.872 c-0.225,0.14-0.519,0.07-0.659-0.154c-0.14-0.225-0.07-0.519,0.154-0.659c1.4-0.868,2.946-1.297,4.206-1.509 c-0.074-0.236-0.14-0.386-0.145-0.398C9.484,3.968,9.294,3.852,9.092,3.872c-0.127,0.01-3.139,0.269-5.069,1.822 C3.015,6.625,1,12.073,1,16.783c0,0.083,0.022,0.165,0.063,0.237c1.391,2.443,5.185,3.083,6.05,3.111c0.005,0,0.01,0,0.015,0 c0.153,0,0.297-0.073,0.387-0.197l0.875-1.202c-2.359-0.61-3.564-1.645-3.634-1.706c-0.198-0.175-0.217-0.477-0.042-0.675 c0.175-0.198,0.476-0.217,0.674-0.043c0.029,0.026,2.248,1.909,6.612,1.909c4.372,0,6.591-1.891,6.613-1.91 c0.198-0.172,0.5-0.154,0.674,0.045c0.174,0.198,0.155,0.499-0.042,0.673c-0.07,0.062-1.275,1.096-3.634,1.706l0.875,1.202 c0.09,0.124,0.234,0.197,0.387,0.197c0.005,0,0.01,0,0.015,0c0.865-0.027,4.659-0.667,6.05-3.111 C22.978,16.947,23,16.866,23,16.783C23,12.073,20.985,6.625,19.952,5.672z M8.891,14.87c-0.924,0-1.674-0.857-1.674-1.913 s0.749-1.913,1.674-1.913s1.674,0.857,1.674,1.913S9.816,14.87,8.891,14.87z M15.109,14.87c-0.924,0-1.674-0.857-1.674-1.913 s0.749-1.913,1.674-1.913c0.924,0,1.674,0.857,1.674,1.913S16.033,14.87,15.109,14.87z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="copyright">
+          <p>&copy; 2025 Game Haven. All rights reserved.</p>
+        </div>
+      </footer>    
+</body>
+</html>
