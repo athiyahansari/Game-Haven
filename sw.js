@@ -1,13 +1,13 @@
 const CACHE_NAME = "my-pwa-cache-v1";
 const urlsToCache = [
   "/",
-  "/index.html",
-  "/styles/layout.css",
-  "/styles/style.css.css",
-  "/Scripts/script.js",
-  "/favicon/android-icon-192x192.png",
-  "/favicon/favicon-192x192.png",
-  "/favicon/favicon-512x512.png"
+  "./index.html",
+  "./styles/layout.css",
+  "./styles/style.css.css",
+  "./Scripts/script.js",
+  "./favicon/android-icon-192x192.png",
+  "./favicon/favicon-192x192.png",
+  "./favicon/favicon-512x512.png"
 ];
 
 self.addEventListener("install", (event) => {
@@ -45,7 +45,7 @@ script.js
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
-        .register("/scripts/sw.js")
+        .register("./scripts/sw.js")
         .then((registration) => {
           console.log("ServiceWorker registered with scope: ", registration.scope);
         })
