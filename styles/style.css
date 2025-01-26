@@ -47,13 +47,13 @@ body {
 }
 
 .slide-1 {
-    background-image: url('/images/hero\ banenr\ 2.jpg');
+    background-image: url('./images/hero\ banenr\ 2.jpg');
     left: 0; /* Start the first slide in view */
     animation-delay: 0s;
 }
 
 .slide-2 {
-    background-image: url('/images/hero\ banner\ 3.jpg');
+    background-image: url('./images/hero\ banner\ 3.jpg');
     left: 100%; /* Start the second slide off-screen to the right */
     animation-delay: 6s; /* Delay for the second slide */
 }
