@@ -2,7 +2,7 @@
     "name": "Game Haven",
     "short_name": "GameHaven",
     "description": "Your one-stop destination for all gaming needs - consoles, games, and accessories",
-    "start_url": "./index.html",
+    "start_url": "./Game Haven/index.html",
     "display": "standalone",
     "background_color": "#121212",
     "theme_color": "#1E90FF",
