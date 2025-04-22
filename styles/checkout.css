@@ -1,0 +1,130 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --electric-blue: #1E90FF;
+    --deep-purple: #800080;
+    --dark-bg: #121212;
+    --dark-gray: #1E1E1E;
+    --light-gray: #333333;
+    --white: #FFFFFF;
+    --card-bg: #242424;
+    --btn-hover: #5A5AFF;
+    --light2-gray: #f4f4f4;
+    --medium-gray: #666;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: var(--dark-bg);
+}
+
+.checkout-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.checkout-container {
+    display: grid;
+    gap: 30px;
+}
+
+/* Order Summary */
+.order-summary {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.order-summary h2 {
+    color: var(--white);
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    color: var(--white);
+    border-bottom: 1px solid var(--light2-gray);
+}
+
+th {
+    background-color: var(--light-gray);
+}
+
+/* Form Sections */
+.form-section {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    color: var(--medium-gray);
+    background-color: #333333;
+    border: 1px solid #656363;
+    border-radius: 4px;
+}
+
+.pay-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #48bb78;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pay-button:hover {
+    background-color: #38a169;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .checkout-container {
+        grid-template-columns: 1fr 2fr;
+    }
+}
