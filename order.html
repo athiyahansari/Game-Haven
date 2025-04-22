@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Haven</title>
+    <link rel="stylesheet" href="./styles/order.css">
     <link rel="stylesheet" href="./styles/layout.css">
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
@@ -29,112 +29,83 @@
         <div class="logo">
             <img src="./favicon/ms-icon-70x70.png" alt="Game Haven Logo">
         </div>
-        <nav>
-            <input type="checkbox" id="nav-toggle" class="nav-overlay-open">
-            <label for="nav-toggle" class="nav-toggle-label">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-                </svg>
-            </label>
-            <div class="nav-overlay">
-                <label for="nav-toggle" class="nav-overlay-close">
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-overlay-open">
+                <label for="nav-toggle" class="nav-toggle-label">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
                     </svg>
                 </label>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="./index.html" class="nav-link">Home</a></li>
-                <li><a href="./about.html" class="nav-link">About Us</a></li>
-                <li><a href="./upcoming.html" class="nav-link">Upcoming Games</a></li>
-                <!-- Mobile View - Direct Links -->
-                <li class="mobile-only"><a href="./consoles.html" class="nav-link">Consoles</a></li>
-                <li class="mobile-only"><a href="./peripherals.html" class="nav-link">Gaming Peripherals</a></li>
-                <!-- Desktop View - Products Dropdown -->
-                <li class="products-container desktop-only">
-                    <a href="#" class="nav-link">Products</a>
-                    <ul class="products-dropdown">
-                        <li><a href="./consoles.html" class="nav-link">Consoles</a></li>
-                        <li><a href="./peripherals.html" class="nav-link">Gaming Peripherals</a></li>
-                    </ul>
-                </li>
-                <li><a href="./games.html" class="nav-link">Games</a></li>
-                <li><a href="./order.html" class="nav-link">Order</a></li>
-                <li><a href="./faq.html" class="nav-link active">Queries & FAQs</a></li>
-            </ul>
-        </nav>
+                <div class="nav-overlay">
+                    <label for="nav-toggle" class="nav-overlay-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </label>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="./about.html" class="nav-link">About Us</a></li>
+                    <li><a href="./upcoming.html" class="nav-link">Upcoming Games</a></li>
+                    <!-- Mobile View - Direct Links -->
+                    <li class="mobile-only"><a href="./consoles.html" class="nav-link">Consoles</a></li>
+                    <li class="mobile-only"><a href="./peripherals.html" class="nav-link">Gaming Peripherals</a></li>
+                    <!-- Desktop View - Products Dropdown -->
+                    <li class="products-container desktop-only">
+                        <a href="#" class="nav-link">Products</a>
+                        <ul class="products-dropdown">
+                            <li><a href="./consoles.html" class="nav-link">Consoles</a></li>
+                            <li><a href="./peripherals.html" class="nav-link">Gaming Peripherals</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./games.html" class="nav-link">Games</a></li>
+                    <li><a href="./order.html" class="nav-link active">Order</a></li>
+                    <li><a href="./faq.html" class="nav-link">Queries & FAQs</a></li>
+                </ul>
+            </nav>
     </header>
 
-    <main class="faq-page">
-      <section class="faq-section">
-          <h1 class="section-title">Frequently Asked Questions</h1>
-          
-          <div class="faq-container">
-              <div class="faq-item">
-                  <input type="checkbox" id="faq1" class="faq-checkbox">
-                  <label for="faq1" class="faq-question">How do I track my order?</label>
-                  <div class="faq-answer">
-                      <p>Once your order is shipped, you'll receive a tracking number via email. You can use this number on our website's tracking page or the courier's website to monitor your delivery status.</p>
-                  </div>
-              </div>
+    <main class="order-page">
+        <h1>Build Your Custom PC</h1>
 
-              <div class="faq-item">
-                  <input type="checkbox" id="faq2" class="faq-checkbox">
-                  <label for="faq2" class="faq-question">What is your return policy?</label>
-                  <div class="faq-answer">
-                      <p>We offer a 30-day return policy for unopened items in their original packaging. For opened items, we provide a 7-day return window if the product is defective.</p>
-                  </div>
-              </div>
+        <!-- Parts Selection -->
+        <div class="parts-container">
+            <!-- Product sections will be generated here -->
+        </div>
 
-              <div class="faq-item">
-                  <input type="checkbox" id="faq3" class="faq-checkbox">
-                  <label for="faq3" class="faq-question">Do you offer international shipping?</label>
-                  <div class="faq-answer">
-                      <p>Yes, we ship to most countries worldwide. Shipping costs and delivery times vary by location. You can check shipping rates during checkout.</p>
-                  </div>
-              </div>
+        <!-- Cart Section -->
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be added here dynamically -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total:</td>
+                        <td id="cart-total">$0</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
 
-              <div class="faq-item">
-                  <input type="checkbox" id="faq4" class="faq-checkbox">
-                  <label for="faq4" class="faq-question">How can I cancel my order?</label>
-                  <div class="faq-answer">
-                      <p>Orders can be cancelled within 2 hours of placement. Contact our customer service team with your order number for immediate assistance.</p>
-                  </div>
-              </div>
+            <div class="cart-actions">
+                <button onclick="saveAsFavorite()" class="favorite-btn">Save as Favorite</button>
+                <button onclick="applyFavorite()" class="favorite-btn">Apply Favorite</button>
+                <button onclick="proceedToCheckout()" class="checkout-btn">Buy Now</button>
+            </div>
+        </section>
+    </main>
 
-              <div class="faq-item">
-                  <input type="checkbox" id="faq5" class="faq-checkbox">
-                  <label for="faq5" class="faq-question">Do you price match?</label>
-                  <div class="faq-answer">
-                      <p>Yes, we offer price matching against major retailers. Send us proof of the lower price within 7 days of your purchase, and we'll refund the difference.</p>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <section class="query-section">
-          <h2 class="section-title">Still Have Questions?</h2>
-          <form class="query-form">
-              <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required>
-              </div>
-              
-              <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-              
-              <div class="form-group">
-                  <label for="issue">Describe Your Issue</label>
-                  <textarea id="issue" name="issue" rows="4" required></textarea>
-              </div>
-              
-              <button type="submit" class="submit-btn">Submit</button>
-          </form>
-      </section>
-  </main>
-    
     <footer class="footer">
         <div class="footer-container">
           <div class="footer-nav">
@@ -153,27 +124,27 @@
             <img src="./favicon/apple-icon-76x76.png" alt="Game Haven Logo">
             <div class="social-links">
               <a href="https://wa.me/">
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="32px" height="32px">    
                     <path d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"/>
                 </svg>
               </a>
               <a href="https://www.facebook.com/">
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="32px" height="32px">    
                     <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"/>
                 </svg>
               </a>
               <a href="https://www.instagram.com/">
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="32px" height="32px">    
                     <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/>
                 </svg>
               </a>
               <a href="https://tiktok.com/">
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="32px" height="32px">
                     <path d="M 6 3 C 4.3550302 3 3 4.3550302 3 6 L 3 18 C 3 19.64497 4.3550302 21 6 21 L 18 21 C 19.64497 21 21 19.64497 21 18 L 21 6 C 21 4.3550302 19.64497 3 18 3 L 6 3 z M 12 7 L 14 7 C 14 8.005 15.471 9 16 9 L 16 11 C 15.395 11 14.668 10.734156 14 10.285156 L 14 14 C 14 15.654 12.654 17 11 17 C 9.346 17 8 15.654 8 14 C 8 12.346 9.346 11 11 11 L 11 13 C 10.448 13 10 13.449 10 14 C 10 14.551 10.448 15 11 15 C 11.552 15 12 14.551 12 14 L 12 7 z"/>
                 </svg>
               </a>
               <a href="https://discord.com/">
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="32px" height="32px">    
                     <path d="M19.952,5.672c-1.904-1.531-4.916-1.79-5.044-1.801c-0.201-0.017-0.392,0.097-0.474,0.281 c-0.006,0.012-0.072,0.163-0.145,0.398c1.259,0.212,2.806,0.64,4.206,1.509c0.224,0.139,0.293,0.434,0.154,0.659 c-0.09,0.146-0.247,0.226-0.407,0.226c-0.086,0-0.173-0.023-0.252-0.072C15.584,5.38,12.578,5.305,12,5.305S8.415,5.38,6.011,6.872 c-0.225,0.14-0.519,0.07-0.659-0.154c-0.14-0.225-0.07-0.519,0.154-0.659c1.4-0.868,2.946-1.297,4.206-1.509 c-0.074-0.236-0.14-0.386-0.145-0.398C9.484,3.968,9.294,3.852,9.092,3.872c-0.127,0.01-3.139,0.269-5.069,1.822 C3.015,6.625,1,12.073,1,16.783c0,0.083,0.022,0.165,0.063,0.237c1.391,2.443,5.185,3.083,6.05,3.111c0.005,0,0.01,0,0.015,0 c0.153,0,0.297-0.073,0.387-0.197l0.875-1.202c-2.359-0.61-3.564-1.645-3.634-1.706c-0.198-0.175-0.217-0.477-0.042-0.675 c0.175-0.198,0.476-0.217,0.674-0.043c0.029,0.026,2.248,1.909,6.612,1.909c4.372,0,6.591-1.891,6.613-1.91 c0.198-0.172,0.5-0.154,0.674,0.045c0.174,0.198,0.155,0.499-0.042,0.673c-0.07,0.062-1.275,1.096-3.634,1.706l0.875,1.202 c0.09,0.124,0.234,0.197,0.387,0.197c0.005,0,0.01,0,0.015,0c0.865-0.027,4.659-0.667,6.05-3.111 C22.978,16.947,23,16.866,23,16.783C23,12.073,20.985,6.625,19.952,5.672z M8.891,14.87c-0.924,0-1.674-0.857-1.674-1.913 s0.749-1.913,1.674-1.913s1.674,0.857,1.674,1.913S9.816,14.87,8.891,14.87z M15.109,14.87c-0.924,0-1.674-0.857-1.674-1.913 s0.749-1.913,1.674-1.913c0.924,0,1.674,0.857,1.674,1.913S16.033,14.87,15.109,14.87z"/>
                 </svg>
               </a>
@@ -185,5 +156,8 @@
           <p>&copy; 2025 Game Haven. All rights reserved.</p>
         </div>
       </footer>    
+
+    <script src="./scripts/product.js" defer></script>
+    <script src="./scripts/order.js" defer></script>
 </body>
 </html>

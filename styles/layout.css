@@ -29,7 +29,7 @@
   
   body {
     font-family: system-ui, -apple-system, sans-serif;
-    padding-top: 80px; /* Adjust this value to match the height of your header */
+    padding-top: 80px; 
   }
   
 
@@ -41,13 +41,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--dark-gray); /* Ensure the background color matches your design */
-    z-index: 1000; /* Ensure the header is above other content */
+    background-color: var(--dark-gray); 
+    z-index: 1000; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem; /* Adjust padding as needed */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    padding: 1rem 2rem; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
   
   .logo {
@@ -193,12 +193,10 @@
       margin-bottom: 0.25rem;
     }
 
-      /* Add z-index to ensure dropdown appears above other content */
   .products-dropdown {
     z-index: 10;
   }
 
-  /* Add padding to create space for dropdown */
   .products-container {
     padding-bottom: 1rem;
   }
@@ -214,7 +212,6 @@
 
   /* FOOTER STYLES */
 
-  /* Footer styles - Mobile First */
 .footer {
     background-color: var(--dark-gray);
     padding: 2rem 1rem;

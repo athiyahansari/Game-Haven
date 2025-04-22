@@ -1,0 +1,192 @@
+{
+    "processors": [
+      {
+        "id": "cpu1",
+        "name": "AMD Ryzen 9 7950X",
+        "price": 699,
+        "image": "./images/order/AMD Ryzen 9 7950X.webp"
+      },
+      {
+        "id": "cpu2",
+        "name": "Intel Core i9-13900K",
+        "price": 589,
+        "image": "./images/order/Intel Core i9-13900K.webp"
+      },
+      {
+        "id": "cpu3",
+        "name": "AMD Ryzen 7 7800X3D",
+        "price": 449,
+        "image": "./images/order/AMD Ryzen 7 7800X3D.avif"
+      },
+      {
+        "id": "cpu4",
+        "name": "Intel Core i7-13700K",
+        "price": 409,
+        "image": "./images/order/Intel Core i7-13700K.jpg"
+      },
+      {
+        "id": "cpu5",
+        "name": "AMD Ryzen 5 7600X",
+        "price": 299,
+        "image": "./images/order/AMD Ryzen 5 7600X.jpg"
+      },
+      {
+        "id": "cpu6",
+        "name": "Intel Core i5-13600K",
+        "price": 319,
+        "image": "./images/order/Intel Core i5-13600K.jpg"
+      }
+    ],
+    "graphics": [
+      {
+        "id": "gpu1",
+        "name": "NVIDIA RTX 4090",
+        "price": 1599,
+        "image": "./images/order/NVIDIA RTX 4090.webp"
+      },
+      {
+        "id": "gpu2",
+        "name": "AMD RX 7900 XTX",
+        "price": 999,
+        "image": "./images/order/AMD RX 7800 XT.jpg"
+      },
+      {
+        "id": "gpu3",
+        "name": "NVIDIA RTX 4080",
+        "price": 1199,
+        "image": "./images/order/NVIDIA RTX 4080.jpg"
+      },
+      {
+        "id": "gpu4",
+        "name": "AMD RX 7900 XT",
+        "price": 899,
+        "image": "./images/order/AMD RX 7900 XT.jpg"
+      },
+      {
+        "id": "gpu5",
+        "name": "NVIDIA RTX 4070 Ti",
+        "price": 799,
+        "image": "./images/order/NVIDIA RTX 4070 Ti.jpg"
+      },
+      {
+        "id": "gpu6",
+        "name": "AMD RX 7800 XT",
+        "price": 499,
+        "image": "./images/order/AMD RX 7800 XT.jpg"
+      }
+    ],
+    "motherboards": [
+      {
+        "id": "mb1",
+        "name": "ASUS ROG Maximus Z790",
+        "price": 599,
+        "image": "./images/order/ASUS ROG Maximus Z790.jpg"
+      },
+      {
+        "id": "mb2",
+        "name": "MSI MEG X670E ACE",
+        "price": 699,
+        "image": "./images/order/MSI MEG X670E ACE.jpg"
+      },
+      {
+        "id": "mb3",
+        "name": "GIGABYTE Z790 AORUS",
+        "price": 449,
+        "image": "./images/order/GIGABYTE Z790 AORUS.jpg"
+      },
+      {
+        "id": "mb4",
+        "name": "ASRock X670E Taichi",
+        "price": 499,
+        "image": "./images/order/ASRock X670E Taichi.jpg"
+      },
+      {
+        "id": "mb5",
+        "name": "ASUS TUF Gaming B650",
+        "price": 299,
+        "image": "./images/order/ASUS TUF Gaming B650.jpg"
+      },
+      {
+        "id": "mb6",
+        "name": "MSI PRO B760",
+        "price": 199,
+        "image": "./images/order/MSI PRO B760.jpg"
+      }
+    ],
+    "memory": [
+      {
+        "id": "ram1",
+        "name": "G.SKILL Trident Z5 32GB",
+        "price": 189,
+        "image": "./images/order/G.SKILL Trident Z5 32GB.avif"
+      },
+      {
+        "id": "ram2",
+        "name": "Corsair Dominator 32GB",
+        "price": 199,
+        "image": "./images/order/Corsair Dominator 32GB.jpg"
+      },
+      {
+        "id": "ram3",
+        "name": "Crucial Ballistix 32GB",
+        "price": 159,
+        "image": "./images/order/Crucial Ballistix 32GB.png"
+      },
+      {
+        "id": "ram4",
+        "name": "Kingston Fury 32GB",
+        "price": 149,
+        "image": "./images/order/Kingston Fury 32GB.jpg"
+      },
+      {
+        "id": "ram5",
+        "name": "TeamGroup T-Force 32GB",
+        "price": 139,
+        "image": "./images/order/TeamGroup T-Force 32GB.webp"
+      },
+      {
+        "id": "ram6",
+        "name": "Thermaltake TOUGHRAM",
+        "price": 179,
+        "image": "./images/order/Thermaltake TOUGHRAM.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "id": "storage1",
+        "name": "Samsung 990 PRO 2TB",
+        "price": 219,
+        "image": "./images/order/Samsung 990 PRO 2TB.jpg"
+      },
+      {
+        "id": "storage2",
+        "name": "WD Black SN850X 2TB",
+        "price": 199,
+        "image": "./images/order/WD Black SN850X 2TB"
+      },
+      {
+        "id": "storage3",
+        "name": "Seagate FireCuda 2TB",
+        "price": 259,
+        "image": "./images/order/Seagate FireCuda 2TB.jpg"
+      },
+      {
+        "id": "storage4",
+        "name": "Crucial P5 Plus 2TB",
+        "price": 179,
+        "image": "./images/order/Crucial P5 Plus 2TB.webp"
+      },
+      {
+        "id": "storage5",
+        "name": "SK hynix P41 2TB",
+        "price": 189,
+        "image": "./images/order/SK hynix P41 2TB.webp"
+      },
+      {
+        "id": "storage6",
+        "name": "Corsair MP600 2TB",
+        "price": 229,
+        "image": "./images/order/Corsair MP600 2TB.jpg"
+      }
+    ]
+  }
