@@ -157,5 +157,5 @@ function proceedToCheckout() {
     }
     
     sessionStorage.setItem('checkoutCart', JSON.stringify(cart));
-    window.location.href = 'checkout.html';
+    window.location.href = './checkout.html';
 }
