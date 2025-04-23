@@ -3,7 +3,7 @@ let products = null;
 
 async function fetchProducts() {
     try {
-        const response = await fetch('../products.json');
+        const response = await fetch('products.json');
         products = await response.json();
         initializePage();
     } catch (error) {
