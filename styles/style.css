@@ -18,7 +18,6 @@ body {
     --white: #FFFFFF;
     --card-bg: #242424;
     --btn-hover: #5A5AFF;
-    --gray-200: #e5e7eb;
     --gray-300: #d1d5db;
     --light2-gray: #f4f4f4;
     --medium-gray: #666;
@@ -48,28 +47,37 @@ body {
 
 .slide-1 {
     background-image: url('../images/hero banenr 2.jpg');
-    left: 0; /* Start the first slide in view */
-    animation-delay: 0s;
+    left: 0; 
+    animation: slide-out 12s infinite;
 }
  
 .slide-2 {
     background-image: url('../images/hero banner 3.jpg');
-    left: 100%; /* Start the second slide off-screen to the right */
-    animation-delay: 6s; /* Delay for the second slide */
+    left: 100%; 
+    animation: slide-in 12s infinite; 
 }
 
-@keyframes slide-animation {
-    0%, 20% {
-        left: 0; /* Slide in from the right */
+@keyframes slide-out {
+    0%, 45% {
+        left: 0;
     }
-    25%, 45% {
-        left: -100%; /* Slide out to the left */
+    50%, 95% {
+        left: -100%;
     }
-    50%, 70% {
-        left: 100%; /* Reset position off-screen to the right */
+    100% {
+        left: 0;
     }
-    75%, 100% {
-        left: 0; /* Slide in from the right */
+}
+
+@keyframes slide-in {
+    0%, 45% {
+        left: 100%;
+    }
+    50%, 95% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
     }
 }
 
@@ -1168,7 +1176,7 @@ a.card .card-title {
     position: absolute;
     top: 0.5rem;
     left: 0.5rem;
-    background-color: var(red);
+    background-color: red;
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
@@ -1196,7 +1204,7 @@ a.card .card-title {
 .products-page  .specs span {
     font-size: 0.75rem;
     padding: 0.25rem 0.5rem;
-    background-color: var(--gray-200);
+    background-color: var(--medium-gray);
     border-radius: 0.25rem;
     color: var(--gray-800);
 }
@@ -1227,7 +1235,7 @@ a.card .card-title {
 .products-page  .discounted-price {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--deep-purple);
+    color: var(--electric-blue);
 }
 
 @media (min-width: 1024px) {
